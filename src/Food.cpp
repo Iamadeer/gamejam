@@ -14,7 +14,7 @@ void Food::update(){
     m_body.y += m_speed * GetFrameTime();
 }
 
-void Food::draw(){
+void Food::draw() const{
     if (m_type == FoodType::Healthy){
         DrawTextureEx(m_brocolli,{m_body.x,m_body.y},0.0f,0.1f, WHITE);
     } else {

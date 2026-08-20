@@ -14,9 +14,7 @@ public:
     Food(FoodType type);
 
     void update();
-    void draw();
-    void reset();
-
+    void draw() const;
     Rectangle getBounds() const;
     FoodType getType() const;
     bool isOutOfBounds() const;

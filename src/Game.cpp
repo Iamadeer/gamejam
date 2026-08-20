@@ -82,7 +82,7 @@ void Game::draw(){
 
         m_player.draw();
 
-        for (Food food : m_foods){
+        for (const Food& food : m_foods){
             food.draw();
         }
 
